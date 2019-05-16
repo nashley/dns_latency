@@ -45,6 +45,6 @@ func main() {
 	for i < *number {
 		go latency(*hostname)
 		i++
-		time.Sleep(time.Second / time.Duration(*speed))
+		time.Sleep(time.Minute / time.Duration(*speed))
 	}
 }
